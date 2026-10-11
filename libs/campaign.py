@@ -111,5 +111,5 @@ def generate_campaign(image_cache, research_brief, personality):
         temperature=CAMPAIGN_GEN_MODEL_TEMP,
     )
     # Push the model output right into a file
-    raw_path = OUTPUT_DIR / "campaigns_raw.txt"
+    raw_path = OUTPUT_DIR / "campaigns_raw.md"
     raw_path.write_text(result, encoding="utf-8")
