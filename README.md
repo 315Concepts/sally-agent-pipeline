@@ -46,7 +46,7 @@ If `sources/` is empty the run still works on photos alone, but the model is tol
 
 ### Filling out USER.md
 
-[ChatGPT - Can you help me do this?](https://chatgpt.com/?q=Can%20you%20read%20the%20USER.md%20file%20for%20https%3A%2F%2Fgithub.com%2F315Concepts%2Fsally-pipeline%20and%20help%20me%20fill%20it%20out%3F)
+[ChatGPT - Can you help me do this?](https://chatgpt.com/?q=Can%20you%20read%20the%20USER.md%20file%20for%20https%3A%2F%2Fgithub.com%2F315Concepts%2Fsally-agent-pipeline%20and%20help%20me%20fill%20it%20out%3F)
 
 `agent/USER.md` is a questionnaire covering your company, products, audience, voice, goals, platforms, capacity, and guardrails. Anything left as `TBD` is treated as "not provided" and the model won't guess, so the more you fill in, the better the drafts. You can do it by hand, but even better would be to have a chat assistant interview you. Keep `USER.md` factual. Don't put secrets, credentials, or private customer data in it: the whole persona folder is sent to the model provider with every request.
 
