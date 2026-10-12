@@ -32,8 +32,8 @@ def _pretty_json(body: str) -> str:
 def dump_http_bodies(stamp: str, request_body: str, response_body: str) -> None:
     """Persist one API attempt's request/response bodies for debugging."""
     LOGS_DIR.mkdir(parents=True, exist_ok=True)
-    (LOGS_DIR / f"REQ-{stamp}.json").write_text(_pretty_json(request_body), encoding="utf-8", errors="replace")
-    (LOGS_DIR / f"RES-{stamp}.json").write_text(_pretty_json(response_body), encoding="utf-8", errors="replace")
+    (LOGS_DIR / f"{stamp}-REQ.json").write_text(_pretty_json(request_body), encoding="utf-8", errors="replace")
+    (LOGS_DIR / f"{stamp}-RES.json").write_text(_pretty_json(response_body), encoding="utf-8", errors="replace")
 
 def extract_json(text: str) -> Any:
     """Extract the first complete JSON value, even if the model adds commentary after it."""
